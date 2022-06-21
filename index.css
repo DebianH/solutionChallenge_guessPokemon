@@ -1,0 +1,117 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(57, 94, 172);
+    
+}
+.pokemon-all{
+    width: 500px;
+    height: 400px;
+    /* background-color: #d0a844; */
+    display:grid;
+    grid-template-rows: 20% 70% 10%;
+    border-radius:5px;
+    
+}
+.flex {
+    display:grid;
+    justify-content: center;
+    align-content: center;
+}
+.flex img{
+    width: 300px;
+    height: 200px;
+    
+}
+
+.formulary {
+    display:grid;
+    grid-template-columns: 70% 30%;
+    
+}
+.shadow {
+    filter: brightness(0);
+
+}
+
+.winner {
+    filter: blur(4px); 
+    /* filter: drop-shadow(0 0 0.75rem rgb(20, 220, 43)); */
+    /* opacity: 0.5; */
+}
+.popup {
+    position:absolute;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    visibility: hidden;
+    transition: transform 0.5s, top 0.4s;
+}
+.open-pokemon-popup {
+    visibility: visible;
+    top: -130px;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* error */
+.error-game {
+    position:absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    visibility: hidden;
+    display:none;
+    transition: transform 0.5s, top 0.4s;
+}
+.open-error-game {
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+    bottom:40%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Contador */
+.score {
+    display:flex;
+    position:absolute;
+    top:0;
+    right:10px;
+    color:#f4e006;
+}
+
+.star{
+   margin-right: 20px!important;
+   margin-bottom: 11px!important;
+   transform: scale(2)!important;
+}
+.master-pokemon{
+    display:flex;
+    position:absolute;
+    top:50%;
+    right:50%;
+    visibility: hidden;
+}
+.open-master-pokemon{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top:50%;
+    left:30%;
+    right:30%;
+    visibility: visibility;
+}

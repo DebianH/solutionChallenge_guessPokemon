@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+    <link rel="stylesheet" href="index.css">
+    <title>Game Pokemon</title>
+</head>
+<body>
+    <section class="container nes-container">
+        <div class="score">
+            <h3><i class="nes-icon is-large star"></i>Score:<span id="number">0</span> </h3>
+        </div>
+        <div class="pokemon-all">
+            <h3 class="nes-balloon from-right nes-pointer">Quién es este pokemon? </h3>
+            <main class="flex"></main>
+            <template class="pokemon-image" id="pokemon-image">
+                <img src="" alt="" class="pokemon-view" id="pokemon-view">
+            </template>
+            <div class="pokemon-enter">
+                <form id="formulary" class="formulary">
+                    <input type="text" id="name_field" class="nes-input" name="input" value="">
+                    <button type="button" class="nes-btn is-primary" id="btn">Guess</button>
+                </form>
+            </div>
+
+            <div class="nes-container with-title is-centered popup" >
+                <p class="title">Winner!</p>
+                <i class="nes-icon trophy is-large"></i>
+                <p>Continue game!..</p>
+            </div>
+            <div class="is-error error-game">
+                <i class="snes-logo"></i>
+                <h3>TRY AGAIN!!</h3>
+                <i class="nes-icon close is-large"></i>
+            </div>
+
+            <div class="the-end master-pokemon">
+                <div class="nes-container is-rounded">
+                    <span class="nes-text is-success">Pokemon master!</span>
+                    <i class="nes-ash"></i>
+                    <i class="nes-pokeball"></i>
+                  </div>
+            </div>
+
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
