@@ -2,7 +2,7 @@
 
 ## Esta es mi solución al reto propuesto
 
-### Esta construido con javascript puro, html y css, además consumimos las api de pokemon para mostrar las imágenes pokemon
+### Esta construido con javascript puro, html y css, además consumimos las api de pokemon para mostrar las imágenes pokemon y comparar con los nombres de los pokemon
 
 
 ## Caracteristicas
